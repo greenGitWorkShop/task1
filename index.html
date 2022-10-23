@@ -1,40 +1,177 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Green Caffe Recursionのホームページです。" />
-    <!-- Destyle CSS -->
-    <link rel="stylesheet" href="styles/destyle.css" />
-    <!-- Bootstrap CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="styles/style.css" />
-    <!--Google Fonts(変更可能)-->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap"
-      rel="stylesheet"
-    />
-    <title>Green Caffe Recursion</title>
-  </head>
-  <body>
-    <div
-        id="top-page"
-        class="vh-100 d-flex justify-content-start align-items-center flex-column"
-    >
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Green Caffe Recursionのホームページです。" />
+  <!-- Destyle CSS -->
+  <link rel="stylesheet" href="styles/destyle.css" />
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <link rel="stylesheet" href="styles/style.css" />
+  <!--Google Fonts(変更可能)-->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap" rel="stylesheet" />
+  <title>Green Caffe Recursion</title>
+</head>
+
+<body>
+  <div id="top-page" class="vh-100 d-flex justify-content-start align-items-center flex-column">
     <!--navbar(担当者：daiten)-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">Cafe Recursion</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#">Home</a>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Drink
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Sweets
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                aria-expanded="false">
+                Food
+              </a>
+              <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+
+          </ul>
+
+          <form class="d-flex">
+            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+        </div>
+      </div>
+    </nav>
     <!--slider(担当者：GypsyR)-->
     <section> 
         <div class="slider" id="slider"></div>
     </section>
     <!--コンテナ(担当者：ミヤザキユー)-->
+      <div class="container-section">
+        <!--コンテナの中のタイトル-->
+        <div class="container-title d-flex justify-content-center align-items-center col-12">
+          <h2 class="nothing-you-could-do">Welcome to Green Cafe recursion</h2>
+        </div>
+        <!--コンテナの中にカードを追加していく（User Profile Cards）を参考にしてみます-->
+        <!--おすすめメニューだけは1行まるごと表示-->
+        <div class="row justify-content-center">
+          <div class="menu-card col-9 mb-2">
+            <div class="card-body">
+              <div class="card-title text-center justify-content-center nothing-you-could-do">
+                <h2>Recommend</h2>
+                <h4>「Curry」</h4>
+              </div>
+              <div class="card-content d-flex align-items-center">
+                <div class="col-9">
+                  <p>カレーが好きなので、勝手におすすめしてみました</p>
+                  <p>見づらすぎるのでカードの色を濃いめにしています（要変更）</p>
+                </div>
+                <div class="col-3">
+                  <img class="card-picture" src="https://free-materials.com/adm/wp-content/uploads/2021/01/DSC_3563-.jpg">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <!--1枚目のカード（1行に3枚）-->
+          <div class="menu-card col-12 col-md-4 mb-2">
+            <div class="card-body">
+              <div class="card-title d-flex justify-content-center nothing-you-could-do">
+                <h3>Coffee</h3>
+              </div>
+              <div class="card-content d-flex align-items-center">
+                <div class="col-6">
+                  <p>当店はこだわりのコーヒーを淹れております的な文章。うち、コーヒーこだわってっからそこんとこよろしく</p>
+                </div>
+                <div class="col-6">
+                  <img class="card-picture" src="https://www.pakutaso.com/shared/img/thumb/kissaten-_92A6908-8905_TP_V.jpg">
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--2枚目のカード-->
+          <div class="menu-card col-12 col-md-4 mb-2">
+            <div class="card-body">
+              <div class="card-title d-flex justify-content-center nothing-you-could-do">
+                <h3>Food</h3>
+              </div>
+              <div class="card-content d-flex align-items-center">
+                <div class="col-6">
+                  <p>おいしそうなピザの写真（カフェってピザあったっけ？）</p>
+                </div>
+                <div class="col-6">
+                  <img class="card-picture" src="https://www.pakutaso.com/shared/img/thumb/tachiaraiIMGL4857_TP_V.jpg">
+                </div>
+              </div>
+            </div>
+          </div>
+          <!--3枚目のカード-->
+          <div class="menu-card col-12 col-md-4 mb-2">
+            <div class="card-body">
+              <div class="card-title d-flex justify-content-center nothing-you-could-do">
+                <h3>Sweets</h3>
+              </div>
+              <div class="card-content d-flex align-items-center">
+                <div class="col-6">
+                  <p>今月のおすすめはイチゴのショートケーキです</p>
+                </div>
+                <div class="col-6">
+                  <img class="card-picture" src="https://www.pakutaso.com/shared/img/thumb/PAK57_ichigonocake_TP_V.jpg">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     <section></section>
     </div>
     <!--（To各人）javascriptで追加したい機能あれば、js書いてscriptsフォルダ内に保存して頂ければよいと思います-->
