@@ -1,0 +1,219 @@
+body {
+    background-color: #fdfbfb;
+  }
+  
+  /* Slider */
+  
+  .slider {
+    height: 50vh;
+    margin: 0 auto;
+    overflow: hidden;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+  }
+  
+  .slider__content {
+    min-width: 100%;
+    animation: sliderAnime 12s ease-in-out infinite;
+  }
+  
+  @keyframes sliderAnime {
+    0% {
+    }
+    10% {
+      transform: translateX(0);
+    }
+    20% {
+      transform: translateX(0);
+    }
+    30% {
+      transform: translateX(-100%);
+    }
+    40% {
+      transform: translateX(-100%);
+    }
+    50% {
+      transform: translateX(-200%);
+    }
+    60% {
+      transform: translateX(-200%);
+    }
+    70% {
+      transform: translateX(-300%);
+    }
+    80% {
+      transform: translateX(-300%);
+    }
+    90% {
+      transform: translateX(-400%);
+    }
+    100% {
+      transform: translateX(-400%);
+    }
+  }
+  
+  .slider__img {
+    max-width: 100%;
+    min-width: 100%;
+  }
+  
+  /* Fonts */
+  .nothing-you-could-do {
+    font-family: 'Nothing You Could Do', cursive;
+  }
+  
+  .large-font {
+    font-size: 3rem;
+  }
+  
+  .middle-font {
+    font-size: 1.8rem;
+  }
+  
+  .small-font {
+    font-size: 0.8rem;
+  }
+  
+  .welcom {
+    color: rgb(161, 156, 142);
+    padding-top: 1.2rem;
+    font-size: 3rem;
+  }
+  
+  .cafe-recursion {
+    color: rgb(161, 156, 142);
+    padding-top: 1.2rem;
+    font-size: 3rem;
+  }
+  
+  /* Card */
+  .card-style {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    margin: 0 8px 8px 8px;
+    padding: 10px;
+    background-color: #f1f1f1;
+  }
+  
+  .card-title {
+    text-align: center;
+  }
+  
+  .card-body {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .card-content-wrapper {
+    display: flex;
+  }
+  
+  .card-content {
+    width: 45%;
+  }
+  
+  .card-photo {
+    height: 180px;
+    width: 240px;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .slider {
+      height: 30vh;
+    }
+  
+    .large-font {
+      font-size: 2.4rem;
+    }
+  
+    .middle-font {
+      font-size: 1.6rem;
+    }
+  
+    .welcom {
+      font-size: 2.4rem;
+      padding-top: 1rem;
+    }
+  
+    .cafe-recursion {
+      font-size: 2.4rem;
+      padding-top: 1rem;
+    }
+  }
+  
+  @media screen and (max-width: 414px) {
+    .slider {
+      height: 30vh;
+    }
+  
+    .large-font {
+      font-size: 2.4rem;
+    }
+  
+    .middle-font {
+      font-size: 1.6rem;
+    }
+  
+    .welcom {
+      font-size: 1.6rem;
+      padding-top: 1rem;
+    }
+  
+    .cafe-recursion {
+      font-size: 2.8rem;
+      padding-top: 0;
+    }
+  
+    .card-content-wrapper {
+      flex-direction: column;
+    }
+  
+    .card-content {
+      width: 100%;
+      font-size: 0.8rem;
+    }
+  
+    .card-style {
+      height: auto;
+    }
+  }
+  
+  @media screen and (max-width: 320px) {
+    .slider {
+      height: 30vh;
+    }
+  
+    .large-font {
+      font-size: 2rem;
+    }
+  
+    .middle-font {
+      font-size: 1.4rem;
+    }
+  
+    .welcom {
+      font-size: 1.4rem;
+      padding-top: 0.7rem;
+    }
+  
+    .cafe-recursion {
+      font-size: 2rem;
+      padding-top: 0;
+    }
+  
+    .card-content-wrapper {
+      flex-direction: column;
+    }
+  
+    .card-content {
+      width: 100%;
+      font-size: 0.8rem;
+    }
+  
+    .card-style {
+      height: auto;
+    }
+  }
+  
