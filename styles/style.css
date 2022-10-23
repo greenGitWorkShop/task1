@@ -3,6 +3,61 @@ body {
   }
   
   /* Slider */
+  .slider {
+    height: 50vh;
+    margin: 0 auto;
+    overflow: hidden;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    align-items: center;
+  }
+
+  .slider__content {
+    min-width: 100%;
+    animation: sliderAnime 20s ease-in-out infinite;
+  }
+
+  @keyframes sliderAnime {
+    0% {
+    }
+    10% {
+      transform: translateX(0);
+    }
+    20% {
+      transform: translateX(0);
+    }
+    30% {
+      transform: translateX(-100%);
+    }
+    40% {
+      transform: translateX(-100%);
+    }
+    50% {
+      transform: translateX(-200%);
+    }
+    60% {
+      transform: translateX(-200%);
+    }
+    70% {
+      transform: translateX(-300%);
+    }
+    80% {
+      transform: translateX(-300%);
+    }
+    90% {
+      transform: translateX(-400%);
+    }
+    100% {
+      transform: translateX(-400%);
+    }
+  }
+
+  .slider__img {
+    max-width: 100%;
+    min-width: 100%;
+  }
+
 
   /* Fonts 変えたいところあれば皆さん勝手に変えたり、追記したりしていただいて結構です*/
   .nothing-you-could-do {
@@ -34,3 +89,104 @@ body {
   }
   
   /* Card おそらくconflictしますが気にせず書きましょう*/
+
+
+  /*　メディア*/
+  @media screen and (max-width: 600px) {
+    .slider {
+      height: 30vh;
+    }
+  
+    .large-font {
+      font-size: 2.4rem;
+    }
+  
+    .middle-font {
+      font-size: 1.6rem;
+    }
+  
+    .welcom {
+      font-size: 2.4rem;
+      padding-top: 1rem;
+    }
+  
+    .cafe-recursion {
+      font-size: 2.4rem;
+      padding-top: 1rem;
+    }
+  }
+  
+  @media screen and (max-width: 414px) {
+    .slider {
+      height: 30vh;
+    }
+  
+    .large-font {
+      font-size: 2.4rem;
+    }
+  
+    .middle-font {
+      font-size: 1.6rem;
+    }
+  
+    .welcom {
+      font-size: 1.6rem;
+      padding-top: 1rem;
+    }
+  
+    .cafe-recursion {
+      font-size: 2.8rem;
+      padding-top: 0;
+    }
+  
+    .card-content-wrapper {
+      flex-direction: column;
+    }
+  
+    .card-content {
+      width: 100%;
+      font-size: 0.8rem;
+    }
+  
+    .card-style {
+      height: auto;
+    }
+  }
+  
+  @media screen and (max-width: 320px) {
+    .slider {
+      height: 30vh;
+    }
+  
+    .large-font {
+      font-size: 2rem;
+    }
+  
+    .middle-font {
+      font-size: 1.4rem;
+    }
+  
+    .welcom {
+      font-size: 1.4rem;
+      padding-top: 0.7rem;
+    }
+  
+    .cafe-recursion {
+      font-size: 2rem;
+      padding-top: 0;
+    }
+  
+    .card-content-wrapper {
+      flex-direction: column;
+    }
+  
+    .card-content {
+      width: 100%;
+      font-size: 0.8rem;
+    }
+  
+    .card-style {
+      height: auto;
+    }
+  }
+  
