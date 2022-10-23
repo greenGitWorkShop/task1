@@ -1,0 +1,36 @@
+body {
+    background-color: #fdfbfb;
+  }
+  
+  /* Slider */
+
+  /* Fonts 変えたいところあれば皆さん勝手に変えたり、追記したりしていただいて結構です*/
+  .nothing-you-could-do {
+    font-family: 'Nothing You Could Do', cursive;
+  }
+  
+  .large-font {
+    font-size: 3rem;
+  }
+  
+  .middle-font {
+    font-size: 1.8rem;
+  }
+  
+  .small-font {
+    font-size: 0.8rem;
+  }
+  
+  .welcom {
+    color: rgb(161, 156, 142);
+    padding-top: 1.2rem;
+    font-size: 3rem;
+  }
+  
+  .cafe-recursion {
+    color: rgb(161, 156, 142);
+    padding-top: 1.2rem;
+    font-size: 3rem;
+  }
+  
+  /* Card おそらくconflictしますが気にせず書きましょう*/
