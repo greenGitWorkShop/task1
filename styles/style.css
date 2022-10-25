@@ -34,17 +34,22 @@ body {
   }
   
   /* Card おそらくconflictしますが気にせず書きましょう*/
+  /* Index.html container部*/
   .card-picture{
     width: 100%;
     height: auto;
     padding: 1em;
   }
 
-  /*見づらすぎるからいったんカードの色を濃いめにしておく（後で絶対変更）*/
   .card{
     background-color:  #f1f1f1;
     border-radius: 10px;
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
     transition: 0.3s;
     box-sizing: border-box;
+  }
+
+    /*drinkMenu部分*/
+  .menu-title{
+    border-left: solid 8px #a69c83;
   }
