@@ -15,7 +15,7 @@ body {
 
   .slider__content {/*スライダーの親div*/
     min-width: 100%;
-    animation: sliderAnime 13s ease-in-out infinite;
+    animation: sliderAnime 15s ease-in-out infinite;
   }
 
   @keyframes sliderAnime {
