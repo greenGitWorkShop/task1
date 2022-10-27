@@ -53,6 +53,13 @@ body {
     }
   }
 
+  .carousel-item{
+    height: 32rem;
+    background: #777777;
+    color: white;
+    position: relative;
+  }
+
   /*画像の上に文字　https://saruwakakun.com/html-css/reference/image-text#section2*/
 
   .divSubContainer{

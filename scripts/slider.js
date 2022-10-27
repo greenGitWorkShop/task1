@@ -21,12 +21,13 @@ class slideImg{
         "c3" : "color3"
     }
 
-    // スライダ要素の作成
+    // スライダ要素の作成(old)
     generateSliderContent(){
         // target
         let domObj = document.getElementById("slider");
         domObj.classList.add("box");
-        // slider用 div
+
+        // slidser用 div
         let divSlider = document.createElement("div");
         divSlider.classList.add("slider__content");
         // sliderに入れる一要素のdiv
@@ -52,11 +53,48 @@ class slideImg{
 
         return domObj;
     }
+
+    //carouselのコンテンツを加える関数(開発途中)
+    generateCarouselElement(){
+        let domObj = document.getElementById("carousel");
+
+        // a tag element
+        let aSlider = document.createElement("a");
+        aSlider.href = this.nextUrl;
+        aSlider.classList.add("carousel-item");
+        aSlider.style = "margin-right: 5px;";
+
+        //span
+        let spanSlider = document.createElement("span");
+        spanSlider.classList.add("carousel-item-img absolute-height");
+
+        // slider img
+        let imgSlider = document.createElement("img");
+        imgSlider.src = this.imgUrl;
+        imgSlider.alt = this.alt;
+        imgSlider.width = "600";
+        imgSlider.height = "300";
+
+        // slider text
+        let pSlider = document.createElement("p");
+        pSlider.innerHTML = this.explanation;
+        pSlider.classList.add(this.placeTable[this.place], this.colorTable[this.colorCode]);
+
+        //DOM
+        domObj.append(aSlider);
+        domObj.append(spanSlider);
+        domObj.append(imgSlider);
+        //domObj.append(pSlider);
+
+        return domObj;
+    }
 }
+
 class helperFunction{
     static startupSlider(sliderList){
         for(let i=0; i<sliderList.length; i++){
             sliderList[i].generateSliderContent();
+            //sliderList[i].generateCarouselElement();
         }
     }
 }
