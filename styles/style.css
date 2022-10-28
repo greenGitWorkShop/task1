@@ -1,6 +1,10 @@
 body {
     background-color: #fdfbfb;
   }
+
+section{
+  width: 100%;
+}
   
   /* Slider */
   .slider {
@@ -154,9 +158,52 @@ body {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
     transition: 0.3s;
     box-sizing: border-box;
+    transition: all 0.5s ease;
+  }
+  
+  .card:hover{
+    transform:translateY(-5px);
+  }
+
+  .drinkCard{
+    display: block;
   }
 
     /*drinkMenu部分*/
   .menu-title{
+    border-left: solid 8px #a69c83;
+  }
+
+
+    /* フッターcss */
+
+  footer {
+    padding-top: 5rem;
+    width: 100%;
+  }
+
+  footer img {
+    width: 4rem;
+    margin: 1rem ;
+    transition: all 0.5s ease;
+  }
+
+  footer img:hover{
+    transform:translateY(-5px);
+  }
+
+  footer .copywright a {
+    font-size: 0.8rem;
+    color: gray;
+    opacity: 0.7;
+    transition: all 0.5s ease;
+  }
+
+  footer a:hover {
+    opacity: 1;
+  }
+
+  /* お問い合わせフォームcss */
+  .contact-title{
     border-left: solid 8px #a69c83;
   }
