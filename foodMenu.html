@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Green Caffe Recursionのホームページです。" />
+  <!-- Destyle CSS -->
+  <link rel="stylesheet" href="styles/destyle.css" />
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <!-- style CSS （index.htmlと同じcssファイルを使用しています。-->
+  <link rel="stylesheet" href="styles/style.css" />
+  <!--Google Fonts(変更可能)-->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap" rel="stylesheet" />
+  <title>Green Caffe Recursion</title>
+</head>
+
+<body>
+  <div id="drink-page" class="vh-100 d-flex justify-content-start align-items-center flex-column">
+    <section>
+      <!--navbar(担当者：daiten)-->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Cafe Recursion</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link" href="drinkMenu.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Drink
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Sweets
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link" href="foodMenu.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  Food
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
+                  aria-expanded="false">
+                  News
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <li><a class="dropdown-item" href="#">Action</a></li>
+                  <li><a class="dropdown-item" href="#">Another action</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#">Something else here</a></li>
+                </ul>
+              </li>
+
+            </ul>
+
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
+        </div>
+      </nav>
+    </section>
+
+    <section>
+      <div class="container text-left">
+        <!-- row -->
+        <div class="row">
+          <!-- col -->
+          <!-- タイトル col-12 -->
+          <h3 class="col-12 font-weight-bold text-left menu-title">季節の<br />おすすめの食べ物</h3>
+          <!-- pタグ -->
+          <p class="col-12 py-2 text-left">肌寒い秋の季節におすすめの新商品をご用意しました。ぜひお試しください</p>
+          <!-- recomendList -->
+          <div class="col-12">
+            <ul class=" list-group text-left  justify-content-center">
+              <!--リスト1件目-->
+              <li class="list-group-item d-flex justify-content-center align-items-center">
+                <figure class="col-4 align-items-center">
+                  <a href="#">
+                    <img src="#">
+                  </a>
+                </figure>
+                <div class="recomend-data col-8">
+                  <div class="recomend-tag">
+                    <p>期間限定</p>
+                  </div>
+                  <div class="recomend-title">
+                    <h4>パエリア</h4>
+                    <p class="recomend-Price">1000円（税込み1100円）</p>
+                  </div>
+                  <p class="recomend-text">サフランを加え魚介類を豊富に加えております。</p>
+                </div>
+              </li>
+              <!--リスト2件目-->
+              <li class="list-group-item d-flex align-items-center">
+                <figure class="col-4">
+                  <a href="#">
+                    <img src="#">
+                  </a>
+                </figure>
+                <div class="recomend-data col-8">
+                  <div class="recomend-tag">
+                    <p>期間限定</p>
+                  </div>
+                  <div class="recomend-title">
+                    <h4>ドラゴンフルーツ</h4>
+                    <p class="recomend-Price">1000円（税込み1100円）</p>
+                  </div>
+                  <p class="recomend-text">季節限定で販売しております。</p>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- row 通常メニューの表-->
+        <div class="row mt-5">
+          <!--通常メニューのタイトル-->
+          <h3 class="col-12 font-weight-bold text-left menu-title">フードメニュー</h3>
+          <!--メニュー価格表-->
+          <!--この辺りはあとで練習のためにJavaScriptで書き換えるかもしれません！-->
+          <table class="table">
+            <thead>
+              <tr>
+                <th scope="col"></th>
+                <th scope="col"><strong>小</strong></th>
+                <th scope="col"><strong>中</strong></th>
+                <th scope="col"><strong>大</strong></th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <th scope="row">スパゲッティ</th>
+                <td>700円<br />（税込770円）</td>
+                <td>1000円<br />（税込1100円）</td>
+                <td>1300円<br />（税込1430円）</td>
+              </tr>
+              <tr>
+                <th scope="row">ハンバーガー</th>
+                <td>500円<br />（税込550円）</td>
+                <td>700円<br />（税込770円）</td>
+                <td>1000円<br />（税込1100円）</td>
+              </tr>
+              <tr>
+                <th scope="row">カレー</th>
+                <td>800円<br />（税込880円）</td>
+                <td>1000円<br />（税込1100円）</td>
+                <td>1200円<br />（税込1320円）</td>
+              </tr>
+              <tr>
+                <th scope="row">パンケーキ</th>
+                <td>400円<br />（税込440円）</td>
+                <td>500円<br />（税込550円）</td>
+                <td>600円<br />（税込660円）</td>
+              </tr>
+              <tr>
+                <th scope="row">アイスクリーム<br />(バニラ・チョコ・抹茶のどれかからお選びください)</th>
+                <td>400円<br />（税込440円）</td>
+                <td>500円<br />（税込550円）</td>
+                <td>600円<br />（税込660円）</td>
+              </tr>
+              <tr>
+                <th scope="row">ポテト</th>
+                <td>300円<br />（税込330円）</td>
+                <td>400円<br />（税込440円）</td>
+                <td>500円<br />（税込550円）</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </section>
+  </div>
+  <!--（To各人）javascriptで追加したい機能あれば、js書いてscriptsフォルダ内に保存して頂ければよいと思います-->
+  <!-- 現時点ではjavascript使用していません-->
+  <script type="text/javascript" src="scripts/main.js"></script>
+</body>
+
+</html>
