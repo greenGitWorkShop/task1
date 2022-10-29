@@ -1,24 +1,34 @@
 <!DOCTYPE html>
 <html lang="ja">
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <meta name="description" content="Green Caffe Recursionのホームページです。" />
-  <!-- Destyle CSS -->
-  <link rel="stylesheet" href="styles/destyle.css" />
-  <!-- Bootstrap CSS -->
-  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
-  <!-- style CSS （index.htmlと同じcssファイルを使用しています。-->
-  <link rel="stylesheet" href="styles/style.css" />
-  <!--Google Fonts(変更可能)-->
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap" rel="stylesheet" />
-  <title>Green Caffe Recursion drinkMenu</title>
-</head>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Green Caffe Recursionのホームページです。" />
+    <!-- Destyle CSS -->
+    <link rel="stylesheet" href="styles/destyle.css" />
+    <!-- Bootstrap CSS -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <!-- style CSS （index.htmlと同じcssファイルを使用しています。-->
+    <link rel="stylesheet" href="styles/style.css" />
+    <!--Google Fonts(変更可能)-->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap"
+      rel="stylesheet"
+    />
+    <title>Green Caffe Recursion drinkMenu</title>
+  </head>
+  <body class="drinkPageBody">
+    <div id="drink-page" class="vh-100 d-flex justify-content-start align-items-center flex-column drinkPageBody">
+
 
 <body>
   <div id="drink-page" class="vh-100 d-flex justify-content-start align-items-center flex-column">
@@ -98,140 +108,145 @@
       </nav>
     </section>
 
-    <!-- ドリンクメニュー -->
-    <section class="mt-5">
-      <div class="container text-left">
-        <!-- row -->
-        <div class="row">
-          <!-- col -->
-          <!-- タイトル col-12 -->
-          <h3 class="col-12 font-weight-bold text-left menu-title">季節の<br />おすすめドリンク</h3>
-          <!-- pタグ -->
-          <p class="col-12 py-2 text-left">肌寒い秋の季節におすすめの新商品をご用意しました。ぜひお試しください</p>
-          <!-- recomendList -->
-          <div class="col-12">
-            <ul class=" list-group text-left  justify-content-center">
-              <!--リスト1件目-->
-              <li class="list-group-item d-flex justify-content-center align-items-center">
-                <figure class="col-4 align-items-center">
-                  <a href="#">
-                    <img src="#">
-                  </a>
-                </figure>
-                <div class="recomend-data col-8">
-                  <div class="recomend-tag">
-                    <p>期間限定</p>
-                  </div>
-                  <div class="recomend-title">
-                    <h4>ほうじ茶ラテ</h4>
-                    <p class="recomend-Price">600円（税込み660円）</p>
-                  </div>
-                  <p class="recomend-text">ミルクの甘い香りの中にほうじ茶の香ばしい香りが漂います。甘さ控えめに仕上げました。</p>
-                </div>
-              </li>
-              <!--リスト2件目-->
-              <li class="list-group-item d-flex align-items-center">
-                <figure class="col-4">
-                  <a href="#">
-                    <img src="#">
-                  </a>
-                </figure>
-                <div class="recomend-data col-8">
-                  <div class="recomend-tag">
-                    <p>期間限定</p>
-                  </div>
-                  <div class="recomend-title">
-                    <h4>パンプキンラテ</h4>
-                    <p class="recomend-Price">600円（税込み660円）</p>
-                  </div>
-                  <p class="recomend-text">国内産のかぼちゃを使用したかぼちゃのラテ。ハロウィンにぴったりです。</p>
-                </div>
-              </li>
-            </ul>
+      <!-- ドリンクメニュー -->
+      <section class="mt-5">
+        <div class="container text-left">
+          <!-- row -->
+          <div class="row">
+            <!-- col -->
+            <!-- タイトル col-12 -->
+            <h3 class="col-12 font-weight-bold text-left menu-title">季節の<br />おすすめドリンク</h3>
+            <!-- pタグ -->
+            <p class="col-12 py-2 text-left">肌寒い秋の季節におすすめの新商品をご用意しました。ぜひお試しください</p>
+            <!-- recommendList -->
+            <div class="col-12">
+                <ul class=" list-group text-left  justify-content-center">
+                  <!--リスト1件目-->
+                  <li class="list-group-item d-flex justify-content-center align-items-center recommend">
+                      <figure class="col-4 align-items-center">
+                        <a href="#">
+                            <img class="recommend-img" src="https://1.bp.blogspot.com/-8Sg7f-1S4mQ/X5OcRnFR2hI/AAAAAAABb7o/eZCm6DJdWrQ3htv6n-4dki43Td5UuGRnQCNcBGAsYHQ/s400/drink_tea_chai.png">
+                        </a>
+                      </figure>
+                      <div class="recomend-data col-8">
+                        <div class="recomend-tag">
+                            <p class="text-white"><mark class="limited">期間限定</mark></p>
+                        </div>
+                        <div class="recomend-title">
+                            <h4>ほうじ茶ラテ</h4>
+                            <p class="recomend-Price">600円（税込み660円）</p>
+                        </div>
+                        <p class="recomend-text">ミルクの甘い香りの中にほうじ茶の香ばしい香りが漂います。甘さ控えめに仕上げました。</p>
+                      </div>
+                  </li>
+                  <!--リスト2件目-->
+                  <li class="list-group-item d-flex align-items-center">
+                    <figure class="col-4">
+                      <a href="#">
+                          <img class="recommend-img" src="https://1.bp.blogspot.com/-Pvw0cjpU8PU/XUTi7aOOAGI/AAAAAAABT-E/_nodpClWjNUmUJf0pQnI7K2pqtyW1SORQCLcBGAs/s1600/kabocha.png">
+                      </a>
+                    </figure>
+                    <div class="recomend-data col-8">
+                      <div class="recomend-tag">
+                          <p class="text-white"><mark class="limited">期間限定</mark></p>
+                      </div>
+                      <div class="recomend-title">
+                          <h4>パンプキンラテ</h4>
+                          <p class="recomend-Price">600円（税込み660円）</p>
+                      </div>
+                      <p class="recomend-text">国内産のかぼちゃを使用したかぼちゃのラテ。ハロウィンにぴったりです。</p>
+                    </div>
+                </li>
+                </ul>
+            </div>
+          </div>
+          <!-- row 通常メニューの表-->
+          <div class="row mt-5">
+            <!--hotメニューのタイトル-->
+            <h3 class="col-12 font-weight-bold text-left menu-title">ホットドリンク</h3>
+            <!--メニュー価格表-->
+            <!--参考のために中身を残してます！邪魔ですみません！-->
+            <div id="hotDrinkTable">
+              <!--<table class="table">
+                <thead>
+                  <tr>
+                    <th scope="col"></th>
+                    <th scope="col"><strong>S</strong></th>
+                    <th scope="col"><strong>M</strong></th>
+                    <th scope="col"><strong>L</strong></th>
+                  </tr>
+                </thead>
+                <tbody>-->
+                  <!--javascriptで中身を追加-->
+                  <!-- 例 -->
+                  <!--
+                    <tr>
+                      <th scope="row">ホットコーヒー</th>
+                      <td>300円<br />（税込330円）</td>
+                      <td>400円<br />（税込440円）</td>
+                      <td>500円<br />（税込550円）</td>
+                    </tr>
+                </tbody>
+              </table>-->
+            </div>
+
+            <!--コールドメニューのタイトル-->
+            <h3 class="col-12 font-weight-bold text-left menu-title">コールドドリンク</h3>
+              <!--メニュー価格表-->
+              <div id="coldDrinkTable">
+                <!--javascriptで中身を追加-->
+              </div>
           </div>
         </div>
-        <!-- row 通常メニューの表-->
-        <div class="row mt-5">
-          <!--hotメニューのタイトル-->
-          <h3 class="col-12 font-weight-bold text-left menu-title">ホットドリンク</h3>
-          <!--メニュー価格表-->
-          <!--この辺りはあとで練習のためにJavaScriptで書き換えるかもしれません！-->
-          <table class="table">
-            <thead>
-              <tr>
-                <th scope="col"></th>
-                <th scope="col"><strong>S</strong></th>
-                <th scope="col"><strong>M</strong></th>
-                <th scope="col"><strong>L</strong></th>
-              </tr>
-            </thead>
-            <tbody id="hotDrinkTable">
-              <!--javascriptで中身を追加-->
-              <!-- 例 -->
-              <!--
-                  <tr>
-                    <th scope="row">ホットコーヒー</th>
-                    <td>300円<br />（税込330円）</td>
-                    <td>400円<br />（税込440円）</td>
-                    <td>500円<br />（税込550円）</td>
-                  </tr>
-                -->
-            </tbody>
-          </table>
 
-          <!--コールドメニューのタイトル-->
-          <h3 class="col-12 font-weight-bold text-left menu-title">コールドドリンク</h3>
-          <!--メニュー価格表-->
-          <table class="table">
-            <thead>
-              <tr>
-                <th scope="col"></th>
-                <th scope="col"><strong>S</strong></th>
-                <th scope="col"><strong>M</strong></th>
-                <th scope="col"><strong>L</strong></th>
-              </tr>
-            </thead>
-            <tbody id="coldDrinkTable">
-              <!--javascriptで中身を追加-->
-            </tbody>
-          </table>
-        </div>
-      </div>
+        <!-- モーダル -->
+        <div>
+          <!-- Button trigger modal -->
+          <div class="fortune-container anime-fuwafuwa align-items-center justify-content-center">
+            <div class="p-4 text-center fortune-circle">
+              <p class="text-white"><mark>何が飲みたいのか決まらない？<br />そんな時はここを押してみて！</mark></p>
+              <button type="button" class="btn btn-primary fortuneButton" data-bs-toggle="modal" data-bs-target="#exampleModal">
+            選んでみる
+              </button>
+            </div>
+          </div>
 
-      <!-- モーダル(編集途中) -->
-      <div>
-        <!-- Button trigger modal -->
-        <button type="button" class="btn btn-primary fortuneButton" data-bs-toggle="modal"
-          data-bs-target="#exampleModal">
-          選んでみる？
-        </button>
-
-        <!-- Modal -->
-        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-          <div class="modal-dialog">
-            <div class="modal-content">
-              <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalLabel">本日のおすすめドリンク</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-              </div>
-              <div class="modal-body">
-                <div id="fortuneTarget" class="justify-content-center align-items-center text-center">
-                  <p>本日のおすすめドリンクは…?</p>
-                  <div class="modal-img">
-                    <img src="#">
-                  </div>
-                  <h3>「ホットコーヒー」</h3>
-                  <div class="price">
-                    <h3>Price</h3>
-                    <p>S: 300円（税込み 330円）</p>
-                    <p>M: 400円（税込み 440円）</p>
-                    <p>L: 500円（税込み 550円）</p>
-                  </div>
-                  <h5>試してみてね</h5>
+          <!-- Modal -->
+          <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+              <div class="modal-content modal-color">
+                <div class="modal-header">
+                  <h5 class="modal-title" id="exampleModalLabel"></h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                <div class="modal-body">
+
+                  <div id="fortuneTarget" class="justify-content-center align-items-center text-center">
+
+                      <!-- javascript 参考のため残してるだけです！ -->
+                      <!--<div>
+                        <h4>本日のおすすめドリンクは…?</h4>
+                          <div class="modal-img">
+                              <img class="rounded-2" src="https://img.icons8.com/ios-filled/344/coffee-beans---v1.png">
+                          </div>
+                        <h3>「ホットコーヒー」</h3>
+                        <div class="price">
+                          <h4 class="mb-4">💁‍♀️Price💁‍♂️</h4>
+                          <p>S: 300円（税込み 330円）</p>
+                          <p>M: 400円（税込み 440円）</p>
+                          <p>L: 500円（税込み 550円）</p>
+                        </div>
+                        <h5>飲んだことあった？<br />まだなければ試してみてね！</h5>
+                    </div>-->
+                      <!-- javascript -->
+
+                  </div>
+
+                </div>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+
               </div>
             </div>
           </div>
@@ -239,26 +254,28 @@
       </div>
     </section>
 
-    <!-- フッター -->
-    <footer class="bg-light">
-      <!-- SNSアイコン -->
-      <div>
-        <div class="icons d-flex flex-wrap col-12 justify-content-center align-items-center">
-          <a href="#"><img src="https://img.icons8.com/color/344/instagram-new--v1.png" alt=""></a>
-          <a href="#"><img src="https://img.icons8.com/color/344/twitter--v1.png" alt=""></a>
-          <a href="#"><img src="https://img.icons8.com/color/344/facebook.png" alt=""></a>
-          <a href="#"><img src="https://img.icons8.com/color/344/youtube-play.png" alt=""></a>
+
+  <!-- フッター -->
+      <footer class="bg-light">
+        <!-- SNSアイコン -->
+        <div>
+          <div class="icons d-flex flex-wrap col-12 justify-content-center align-items-center">
+            <a href="#"><img src="https://img.icons8.com/color/344/instagram-new--v1.png" alt=""></a>
+            <a href="#"><img src="https://img.icons8.com/color/344/twitter--v1.png" alt=""></a>
+            <a href="#"><img src="https://img.icons8.com/color/344/facebook.png" alt=""></a>
+            <a href="#"><img src="https://img.icons8.com/color/344/youtube-play.png" alt=""></a>
+          </div>
         </div>
-      </div>
-      <!--コピーライト-->
-      <div class="copywright d-column justify-content-center align-items-center text-center py-3">
-        <a href="#" class="px-2">よくあるご質問</a>
-        <a href="#" class="px-2">利用規約</a>
-        <a href="contact.html" class="px-2">ご意見・お問い合わせ</a>
-        <a href="#" class="px-2">個人情報保護方針</a>
-        <p class="px-2 m-2">Copyright © 2022 Green cafe recursion</p>
-      </div>
-    </footer>
+        <!--コピーライト-->
+        <div class="copywright d-column justify-content-center align-items-center text-center py-3">
+          <a href="#" class="px-2">よくあるご質問</a>
+          <a href="#" class="px-2">利用規約</a>
+          <a href="contact.html" class="px-2">ご意見・お問い合わせ</a>
+          <a href="#" class="px-2">個人情報保護方針</a>
+          <p class="px-2 m-2">Copyright © 2022 Green cafe recursion</p>
+        </div>
+      </footer>
+
 
     <!--（To各人）javascriptで追加したい機能あれば、js書いてscriptsフォルダ内に保存して頂ければよいと思います-->
     <script src="scripts/drinkMenu.js" defer></script>
