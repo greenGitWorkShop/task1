@@ -24,79 +24,77 @@
 <body>
   <div id="top-page" class="vh-100 d-flex justify-content-start align-items-center flex-column">
     <!--navbar(担当者：daiten)-->
-    <section> 
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Cafe Recursion</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
+    <section>
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Cafe Recursion</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+            aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
 
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+              </li>
 
-            <li class="nav-item dropdown">
+              <li class="nav-item dropdown">
 
-              <a class="nav-link" href="drinkMenu.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                Drink
-              </a>
-            </li>
+                <a class="nav-link" href="drinkMenu.html" id="navbarDropdown" role="button" aria-expanded="false">
+                  Drink
+                </a>
+              </li>
 
-            <li class="nav-item dropdown">
-              <a class="nav-link" href="sweets.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                Sweets
-              </a>
-            </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link" href="sweets.html" id="navbarDropdown" role="button" aria-expanded="false">
+                  Sweets
+                </a>
+              </li>
 
-            <li class="nav-item dropdown">
-              <a class="nav-link" href="foodMenu.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                Food
-              </a>
-            </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link" href="foodMenu.html" id="navbarDropdown" role="button" aria-expanded="false">
+                  Food
+                </a>
+              </li>
 
-            <li class="nav-item dropdown">
-              <a class="nav-link" href="special.html" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-                aria-expanded="false">
-                News
-              </a>
-            </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link" href="special.html" id="navbarDropdown" role="button" aria-expanded="false">
+                  News
+                </a>
+              </li>
+              <a></a>
+              <a>></a>
+            </ul>
 
-          </ul>
-
-          <form class="d-flex">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
+            <form class="d-flex">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+          </div>
         </div>
-      </div>
-    </nav>
+      </nav>
     </section>
     <!--slider(担当者：GypsyR)-->
 
-    <section> 
+    <section>
       <!-- 初期スライダー 22/10/29編集 -->
-        <div class="slider" id="slider"></div>
-        <!-- carousel 22/10/29 jsではできず。原因不明　参考（http://jimoto-b.com/）(https://getbootstrap.com/docs/4.2/components/carousel/)-->
-        <div class="container">
-          <div class="row">
-            <div id="carouselControls" class="carousel slide carousel-fade d-flex" data-bs-ride="carousel">
-              <div id = "carouselIndicators" class="carousel-indicators">
-                <!--
+      <div class="slider" id="slider"></div>
+      <!-- carousel 22/10/29 jsではできず。原因不明参考（http://jimoto-b.com/）(https://getbootstrap.com/docs/4.2/components/carousel/)-->
+      <div class="container">
+        <div class="row">
+          <div id="carouselControls" class="carousel slide carousel-fade d-flex" data-bs-ride="carousel">
+            <div id="carouselIndicators" class="carousel-indicators">
+              <!--
                 <button type="button" data-bs-target="#carouselControls" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
                 <button type="button" data-bs-target="#carouselControls" data-bs-slide-to="1" aria-label="Slide 2"></button>
                 <button type="button" data-bs-target="#carouselControls" data-bs-slide-to="2" aria-label="Slide 3"></button>
                 -->
 
-              </div>
-              <div id = "carouselItem" class="carousel-inner">
-                <!--
+            </div>
+            <div id="carouselItem" class="carousel-inner">
+              <!--
                 <div class="carousel-item active">
                   <img src="images/linkedin_banner_image_2.png" class="d-block w-100 col-12 col-sm-10 col-lg-11" alt="team">
                   <div class="carousel-caption d-none d-md-block">
@@ -111,20 +109,20 @@
                   <img src="images/teamdev.png" class="d-block w-100 col-12 col-sm-10 col-lg-11" alt="third">
                 </div>
                 -->
-              </div>
-              <button class="carousel-control-prev" type="button" data-bs-target="#carouselControls" data-bs-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Previous</span>
-              </button>
-              <button class="carousel-control-next" type="button" data-bs-target="#carouselControls" data-bs-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                <span class="visually-hidden">Next</span>
-              </button>
             </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselControls" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselControls" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
         </div>
       </div>
-        <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>-->
-        
+      <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>-->
+
 
     </section>
     <!--コンテナ(担当者：ミヤザキユー)-->
