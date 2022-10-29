@@ -1,4 +1,5 @@
-// slider用の処理 GypsyR
+///////// 初期のスライダー用
+// sliderクラス GypsyR
 class slideImg{
     constructor(alt, explanation, imgUrl, place, colorCode, nextUrl){
         this.alt = alt;
@@ -50,42 +51,6 @@ class slideImg{
         // アニメーションをもつスライダーにappend
         divSlider.append(divSub);
         domObj.append(divSlider);
-
-        return domObj;
-    }
-
-    //carouselのコンテンツを加える関数(開発途中)
-    generateCarouselElement(){
-        let domObj = document.getElementById("carousel");
-
-        // a tag element
-        let aSlider = document.createElement("a");
-        aSlider.href = this.nextUrl;
-        aSlider.classList.add("carousel-item");
-        aSlider.style = "margin-right: 5px;";
-
-        //span
-        let spanSlider = document.createElement("span");
-        spanSlider.classList.add("carousel-item-img absolute-height");
-
-        // slider img
-        let imgSlider = document.createElement("img");
-        imgSlider.src = this.imgUrl;
-        imgSlider.alt = this.alt;
-        imgSlider.width = "600";
-        imgSlider.height = "300";
-
-        // slider text
-        let pSlider = document.createElement("p");
-        pSlider.innerHTML = this.explanation;
-        pSlider.classList.add(this.placeTable[this.place], this.colorTable[this.colorCode]);
-
-        //DOM
-        domObj.append(aSlider);
-        domObj.append(spanSlider);
-        domObj.append(imgSlider);
-        //domObj.append(pSlider);
-
         return domObj;
     }
 }
@@ -99,12 +64,14 @@ class helperFunction{
     }
 }
 
+
+
 //インスタンス作成　名称、テキスト、画像URL、画像位置、文字色、クリック先のURL
-let sImg1 = new slideImg("slider_image1", "　", "images/linkedin_banner_image_2.png","left", "c1", " ");
-let sImg2 = new slideImg("slider_image2", "【特集】プレゼント企画！", "images/pancakes-5989136_1280.jpg","center", "c3","special.html");
-let sImg3 = new slideImg("slider_image3", "カフェでチーム開発?リアルイベント開催", "images/teamdev.png","right", "c1","special.html");
-let sImg4 = new slideImg("slider_image4", "【新メニュー】ドリンク？", "images/apple-pie-5479993_1280.jpg","left", "c3","special.html");
-let sImg5 = new slideImg("slider_image5", "【新メニュー】フード？", "images/coffee-6632524_1280.jpg","center", "c1","special.html");
+let sImg1 = new slideImg("slider_image1", "　", "images/linkedin_banner_image_2.png","left", "c1", "special.html#post-3");
+let sImg2 = new slideImg("slider_image2", "【特集】パンケーキセット！", "images/pancakes-5989136_1280.jpg","center", "c1","special.html#post-1");
+let sImg3 = new slideImg("slider_image3", "プレゼント企画", "images/teamdev.png","right", "c1","special.html#post-2");
+let sImg4 = new slideImg("slider_image4", "【新メニュー】GreenCoffee", "images/apple-pie-5479993_1280.jpg","left", "c2","drinkMenu.html");
+let sImg5 = new slideImg("slider_image5", "【新メニュー】コーヒー豆", "images/coffee-6632524_1280.jpg","center", "c2","foodMenu.html");
 let sList = [sImg1,sImg2,sImg3,sImg4,sImg5];
 //各要素配置
 helperFunction.startupSlider(sList);
