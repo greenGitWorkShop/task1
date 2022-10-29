@@ -178,6 +178,10 @@ section{
     display: block;
   }
 
+  .jump-button a{
+    display: block;
+  }
+
     /* フッターcss */
 
   footer {
