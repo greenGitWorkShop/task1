@@ -1,7 +1,7 @@
 # Green Cafe Recursion 公式サイト
 
 ## コンセプト
-GreenTeam運営によるカフェのwebサイト<br>
+カフェのwebサイト<br>
 <img width="400" alt="Green Cafe Recursion" src="images/readme/linkedin_profile_image.png">
 ### ページ構成
 - Homeページ
