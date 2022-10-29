@@ -83,8 +83,11 @@ section {
   padding: 1em;
 }
 
+  .jump-button a{
+    display: block;
+  }
 
-/* Fonts 変えたいところあれば皆さん勝手に変えたり、追記したりしていただいて結構です*/
+    /* フッターcss */
 .nothing-you-could-do {
   font-family: 'Nothing You Could Do', cursive;
 }
