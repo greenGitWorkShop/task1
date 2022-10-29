@@ -20,7 +20,7 @@ section {
 .slider__content {
   /*スライダーの親div*/
   min-width: 100%;
-  animation: sliderAnime 15s ease-in-out infinite;
+  animation: sliderAnime 17s ease-in-out infinite;
 }
   .carousel-item{
     min-width: 100%;
@@ -72,8 +72,9 @@ section {
 
   100% {
     transform: translateX(-400%);
-   }
+  }
    
+  }
   /*special page*/
   .card-picture-specialPage{
     width: 100%;
@@ -117,8 +118,6 @@ section {
     padding: 1em;
 
   }
-}
-
 
 
 /*画像の上に文字　https://saruwakakun.com/html-css/reference/image-text#section2*/
