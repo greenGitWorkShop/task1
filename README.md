@@ -18,7 +18,7 @@
 今後の課題としてはserch欄で各ページの食べ物などを調べることができるようにしたいです。
 ### 2.スライダー(GypsyR)
 javascriptで作成しました。(scripts/slider.js)<br>
-画像、及び画像上に載せる文字、文字色をクラスで管理し追加を容易にし、開発の効率化を図りました。<br>
+画像、及び画像上に載せる文字、文字色、クリックしたときの移動先ページをクラスで管理し追加を容易にし、開発の効率化を図りました。<br>
 以下のようにインスタンスを作成すればスライダーに追加できます。 <br>（ただし枚数が変わった場合アニメーションについてstyle.cssで調整する必要があります。） <br>bootstrapのcarouselを用いたスライダーで改善予定です（現在carouselContents.js作成中)
 
 ```let sImg2 = new slideImg("slider_image2", "【特集】パンケーキセット！", "images/pancakes-5989136_1280.jpg","center", "c1","special.html#post-1");```
