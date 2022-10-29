@@ -22,13 +22,14 @@ section {
   min-width: 100%;
   animation: sliderAnime 17s ease-in-out infinite;
 }
-  .carousel-item{
-    min-width: 100%;
-    height: 32rem;
-    background: #777777;
-    color: white;
-    position: relative;
-  }
+
+.carousel-item {
+  min-width: 100%;
+  height: 32rem;
+  background: #777777;
+  color: white;
+  position: relative;
+}
 
 
 @keyframes sliderAnime {
@@ -73,51 +74,57 @@ section {
   100% {
     transform: translateX(-400%);
   }
-   
   }
+  
   /*special page*/
   .card-picture-specialPage{
     width: 100%;
     height: 100%;
     object-fit: cover;
   }
-  
 
-  /* Fonts 変えたいところあれば皆さん勝手に変えたり、追記したりしていただいて結構です*/
-  .nothing-you-could-do {
-    font-family: 'Nothing You Could Do', cursive;
+  .jump-button a{
+    display: block;
   }
-  
-  .large-font {
-    font-size: 3rem;
-  }
-  
-  .middle-font {
-    font-size: 1.8rem;
-  }
-  
-  .small-font {
-    font-size: 0.8rem;
-  }
-  
-  .welcom {
-    color: rgb(161, 156, 142);
-    padding-top: 1.2rem;
-    font-size: 3rem;
-  }
-  
-  .cafe-recursion {
-    color: rgb(161, 156, 142);
-    padding-top: 1.2rem;
-    font-size: 3rem;
-  }
-  
-  .card-picture{
-    width: 100%;
-    height: auto;
-    padding: 1em;
 
-  }
+
+    /* フッターcss */
+.nothing-you-could-do {
+  font-family: 'Nothing You Could Do', cursive;
+}
+
+.large-font {
+  font-size: 3rem;
+}
+
+.middle-font {
+  font-size: 1.8rem;
+}
+
+.small-font {
+  font-size: 0.8rem;
+}
+
+.welcom {
+  color: rgb(161, 156, 142);
+  padding-top: 1.2rem;
+  font-size: 3rem;
+}
+
+.cafe-recursion {
+  color: rgb(161, 156, 142);
+  padding-top: 1.2rem;
+  font-size: 3rem;
+}
+
+.card-picture {
+  width: 100%;
+  height: auto;
+  padding: 1em;
+
+}
+
+
 
 
 /*画像の上に文字　https://saruwakakun.com/html-css/reference/image-text#section2*/
@@ -148,9 +155,9 @@ section {
   /*Google Font*/
 }
 
-  .drinkCard {
-    display: block;
-  }
+.drinkCard {
+  display: block;
+}
 
 /* フッターcss */
 
@@ -280,11 +287,11 @@ footer a:hover {
 
 /*drinkMenu部分*/
 
-.menu-title{
+.menu-title {
   border-left: solid 8px #a69c83;
 }
 
-.limited{
+.limited {
   background-color: red;
 }
 
@@ -295,7 +302,7 @@ footer a:hover {
 
 
 /* modalのcss */
-.modal-title{
+.modal-title {
   font-size: 1rem;
 }
 
@@ -306,7 +313,7 @@ footer a:hover {
   border-bottom: solid 2px rgba(139, 69, 19, 0.662);
 }
 
-.modal-img img{
+.modal-img img {
   width: 50%;
   height: auto;
 }
@@ -316,7 +323,7 @@ footer a:hover {
 }
 
 /*ここ良くないよ！ 要改善*/
-.fortune-container{
+.fortune-container {
   position: fixed;
   bottom: 3rem;
   right: 3rem;
@@ -332,18 +339,21 @@ footer a:hover {
 }
 
 .fortune-circle p {
-  width:fit-content;
+  width: fit-content;
 }
 
-mark{
+mark {
   background-color: rgba(255, 255, 255, 0.781);
 }
 
 /* ふわふわするアニメーション */
 @keyframes fuwafuwa {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: translateY(0);
   }
+
   50% {
     transform: translateY(-20px);
   }
