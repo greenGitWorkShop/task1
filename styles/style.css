@@ -20,7 +20,7 @@ section {
 .slider__content {
   /*スライダーの親div*/
   min-width: 100%;
-  animation: sliderAnime 15s ease-in-out infinite;
+  animation: sliderAnime 17s ease-in-out infinite;
 }
 
 .carousel-item {
@@ -74,18 +74,19 @@ section {
   100% {
     transform: translateX(-400%);
   }
-}
-
-/*special page*/
-.card-picture-special {
-  width: 100%;
-  height: auto;
-  padding: 1em;
-}
+  }
+  
+  /*special page*/
+  .card-picture-specialPage{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
 
   .jump-button a{
     display: block;
   }
+
 
     /* フッターcss */
 .nothing-you-could-do {
