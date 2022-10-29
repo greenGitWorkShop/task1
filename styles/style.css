@@ -1,227 +1,296 @@
 body {
-    background-color: #fdfbfb;
-  }
+  background-color: #fdfbfb;
+}
 
-section{
+section {
   width: 100%;
 }
-  
-  /* Slider */
-  .slider {
-    height: 50vh;
-    margin: 0 auto;
-    overflow: hidden;
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: flex-start;
-    align-items: center;
+
+/* Slider */
+.slider {
+  height: 50vh;
+  margin: 0 auto;
+  overflow: hidden;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.slider__content {
+  /*スライダーの親div*/
+  min-width: 100%;
+  animation: sliderAnime 15s ease-in-out infinite;
+}
+
+.carousel-item {
+  min-width: 100%;
+  height: 32rem;
+  background: #777777;
+  color: white;
+  position: relative;
+}
+
+
+@keyframes sliderAnime {
+  0% {}
+
+  10% {
+    transform: translateX(0);
   }
 
-  .slider__content {/*スライダーの親div*/
-    min-width: 100%;
-    animation: sliderAnime 15s ease-in-out infinite;
+  20% {
+    transform: translateX(0);
   }
 
-  @keyframes sliderAnime {
-    0% {
-    }
-    10% {
-      transform: translateX(0);
-    }
-    20% {
-      transform: translateX(0);
-    }
-    30% {
-      transform: translateX(-100%);
-    }
-    40% {
-      transform: translateX(-100%);
-    }
-    50% {
-      transform: translateX(-200%);
-    }
-    60% {
-      transform: translateX(-200%);
-    }
-    70% {
-      transform: translateX(-300%);
-    }
-    80% {
-      transform: translateX(-300%);
-    }
-    90% {
-      transform: translateX(-400%);
-    }
-    100% {
-      transform: translateX(-400%);
-    }
+  30% {
+    transform: translateX(-100%);
   }
 
-  .carousel-item{
-    min-width: 100%;
-    height: 32rem;
-    background: #777777;
-    color: white;
-    position: relative;
+  40% {
+    transform: translateX(-100%);
   }
 
-  /*画像の上に文字　https://saruwakakun.com/html-css/reference/image-text#section2*/
-
-  .divSubContainer{
-    width:100%;
-    height: 100%;
-    position: relative;
+  50% {
+    transform: translateX(-200%);
   }
 
-  .divSubContainer img {
-    width:100%;
-    height:100%
+  60% {
+    transform: translateX(-200%);
   }
 
-  .divSubContainer p {
-    position: absolute;
-    /*top: 60%;
-    left: 20%;*/
-    transform: translate(-50%,-50%);
-    padding:0;
-    margin:0;
-    font-weight: bold; /*太字に*/
-    font-size: 3em;/*サイズ2倍*/
-    font-family :Quicksand, sans-serif;/*Google Font*/
+  70% {
+    transform: translateX(-300%);
   }
 
-  /*画像位置*/
-  .left {
-    top: 60%;
-    left: 20%;
+  80% {
+    transform: translateX(-300%);
   }
 
-  .center {
-    top: 50%;
-    left: 50%;
+  90% {
+    transform: translateX(-400%);
   }
 
-  .right {
-    top: 60%;
-    left: 70%;
+  100% {
+    transform: translateX(-400%);
   }
+}
 
-  .color1{
-    color: white;
-  }
-
-  .color2{
-    color: yellow;
-  }
-
-  .color3{
-    color: blue;
-  }
-
-  /*special page*/
-  .card-picture-special{
-    width: 100%;
-    height: auto;
-    padding: 1em;
-  }
-  
-
-  /* Fonts 変えたいところあれば皆さん勝手に変えたり、追記したりしていただいて結構です*/
-  .nothing-you-could-do {
-    font-family: 'Nothing You Could Do', cursive;
-  }
-  
-  .large-font {
-    font-size: 3rem;
-  }
-  
-  .middle-font {
-    font-size: 1.8rem;
-  }
-  
-  .small-font {
-    font-size: 0.8rem;
-  }
-  
-  .welcom {
-    color: rgb(161, 156, 142);
-    padding-top: 1.2rem;
-    font-size: 3rem;
-  }
-  
-  .cafe-recursion {
-    color: rgb(161, 156, 142);
-    padding-top: 1.2rem;
-    font-size: 3rem;
-  }
-  
-  .card-picture{
-    width: 100%;
-    height: auto;
-    padding: 1em;
-  }
-
-  .card{
-    background-color:  #f1f1f1;
-    border-radius: 10px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
-    transition: 0.3s;
-    box-sizing: border-box;
-    transition: all 0.5s ease;
-  }
-  
-  .card:hover{
-    transform:translateY(-5px);
-  }
-
-  .drinkCard {
-    display: block;
-  }
+/*special page*/
+.card-picture-special {
+  width: 100%;
+  height: auto;
+  padding: 1em;
+}
 
   .jump-button a{
     display: block;
   }
 
     /* フッターcss */
+.nothing-you-could-do {
+  font-family: 'Nothing You Could Do', cursive;
+}
 
-  footer {
-    padding-top: 5rem;
-    width: 100%;
-  }
+.large-font {
+  font-size: 3rem;
+}
 
-  footer img {
-    width: 4rem;
-    margin: 1rem ;
-    transition: all 0.5s ease;
-  }
+.middle-font {
+  font-size: 1.8rem;
+}
 
-  footer img:hover{
-    transform:translateY(-5px);
-  }
+.small-font {
+  font-size: 0.8rem;
+}
 
-  footer .copywright a {
-    font-size: 0.8rem;
-    color: gray;
-    opacity: 0.7;
-    transition: all 0.5s ease;
-  }
+.welcom {
+  color: rgb(161, 156, 142);
+  padding-top: 1.2rem;
+  font-size: 3rem;
+}
 
-  footer a:hover {
-    opacity: 1;
-  }
+.cafe-recursion {
+  color: rgb(161, 156, 142);
+  padding-top: 1.2rem;
+  font-size: 3rem;
+}
 
-  /* お問い合わせフォームcss */
-  .contact-title{
-    border-left: solid 8px #a69c83;
-  }
+.card-picture {
+  width: 100%;
+  height: auto;
+  padding: 1em;
+
+}
+
+
+
+
+/*画像の上に文字　https://saruwakakun.com/html-css/reference/image-text#section2*/
+
+.divSubContainer {
+  width: 100%;
+  height: 100%;
+  position: relative;
+}
+
+.divSubContainer img {
+  width: 100%;
+  height: 100%
+}
+
+.divSubContainer p {
+  position: absolute;
+  /*top: 60%;
+    left: 20%;*/
+  transform: translate(-50%, -50%);
+  padding: 0;
+  margin: 0;
+  font-weight: bold;
+  /*太字に*/
+  font-size: 3em;
+  /*サイズ2倍*/
+  font-family: Quicksand, sans-serif;
+  /*Google Font*/
+}
+
+.drinkCard {
+  display: block;
+}
+
+/* フッターcss */
+
+/*画像位置*/
+.left {
+  top: 60%;
+  left: 20%;
+}
+
+.center {
+  top: 50%;
+  left: 50%;
+}
+
+.right {
+  top: 60%;
+  left: 70%;
+}
+
+.color1 {
+  color: white;
+}
+
+.color2 {
+  color: yellow;
+}
+
+.color3 {
+  color: blue;
+}
+
+/* Fonts 変えたいところあれば皆さん勝手に変えたり、追記したりしていただいて結構です*/
+.nothing-you-could-do {
+  font-family: 'Nothing You Could Do', cursive;
+}
+
+.large-font {
+  font-size: 3rem;
+}
+
+.middle-font {
+  font-size: 1.8rem;
+}
+
+.small-font {
+  font-size: 0.8rem;
+}
+
+.welcom {
+  color: rgb(161, 156, 142);
+  padding-top: 1.2rem;
+  font-size: 3rem;
+}
+
+.cafe-recursion {
+  color: rgb(161, 156, 142);
+  padding-top: 1.2rem;
+  font-size: 3rem;
+}
+
+.card-picture {
+  width: 100%;
+  height: auto;
+  padding: 1em;
+}
+
+.card {
+  background-color: #f1f1f1;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.3);
+  transition: 0.3s;
+  box-sizing: border-box;
+  transition: all 0.5s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.drinkCard {
+  display: block;
+}
 
 /*drinkMenu部分*/
-
-.menu-title{
+.menu-title {
   border-left: solid 8px #a69c83;
 }
 
-.limited{
+
+/* フッターcss */
+
+footer {
+  padding-top: 5rem;
+  width: 100%;
+}
+
+footer img {
+  width: 4rem;
+  margin: 1rem;
+  transition: all 0.5s ease;
+}
+
+footer img:hover {
+  transform: translateY(-5px);
+}
+
+footer .copywright a {
+  font-size: 0.8rem;
+  color: gray;
+  opacity: 0.7;
+  transition: all 0.5s ease;
+}
+
+footer a:hover {
+  opacity: 1;
+}
+
+/* お問い合わせフォームcss */
+.contact-title {
+  border-left: solid 8px #a69c83;
+}
+
+.imgUrl {
+  width: 300px;
+  height: 200px;
+}
+
+/*drinkMenu部分*/
+
+.menu-title {
+  border-left: solid 8px #a69c83;
+}
+
+.limited {
   background-color: red;
 }
 
@@ -232,7 +301,7 @@ section{
 
 
 /* modalのcss */
-.modal-title{
+.modal-title {
   font-size: 1rem;
 }
 
@@ -243,7 +312,7 @@ section{
   border-bottom: solid 2px rgba(139, 69, 19, 0.662);
 }
 
-.modal-img img{
+.modal-img img {
   width: 50%;
   height: auto;
 }
@@ -253,7 +322,7 @@ section{
 }
 
 /*ここ良くないよ！ 要改善*/
-.fortune-container{
+.fortune-container {
   position: fixed;
   bottom: 3rem;
   right: 3rem;
@@ -269,18 +338,21 @@ section{
 }
 
 .fortune-circle p {
-  width:fit-content;
+  width: fit-content;
 }
 
-mark{
+mark {
   background-color: rgba(255, 255, 255, 0.781);
 }
 
 /* ふわふわするアニメーション */
 @keyframes fuwafuwa {
-  0%, 100% {
+
+  0%,
+  100% {
     transform: translateY(0);
   }
+
   50% {
     transform: translateY(-20px);
   }

@@ -28,7 +28,7 @@
       <!--navbar(担当者：daiten)-->
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Cafe Recursion</a>
+          <a class="navbar-brand" href="index.html">Cafe Recursion</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
             data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
             aria-label="Toggle navigation">
@@ -38,52 +38,31 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
               </li>
 
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-                  aria-expanded="false">
+                <a class="nav-link" href="drinkMenu.html" id="navbarDropdown" role="button" aria-expanded="false">
                   Drink
                 </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li>
-                    <hr class="dropdown-divider">
-                  </li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
               </li>
 
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-                  aria-expanded="false">
+                <a class="nav-link" href="sweets.html" id="navbarDropdown" role="button" aria-expanded="false">
                   Sweets
                 </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li>
-                    <hr class="dropdown-divider">
-                  </li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
               </li>
 
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-                  aria-expanded="false">
+                <a class="nav-link" href="foodMenu.html" id="navbarDropdown" role="button" aria-expanded="false">
                   Food
                 </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li>
-                    <hr class="dropdown-divider">
-                  </li>
-                  <li><a class="dropdown-item" href="#">Something else here</a></li>
-                </ul>
+              </li>
+
+              <li class="nav-item dropdown">
+                <a class="nav-link" href="#" id="navbarDropdown" role="button" aria-expanded="false">
+                  News
+                </a>
               </li>
 
             </ul>
@@ -101,13 +80,13 @@
       <div class="container text-left">
         <!-- row -->
         <div class="row">
-           <!-- col -->
-           <!-- タイトル col-12 -->
-           <h2 class="col-12 font-weight-bold text-left menu-title py-3">ニュースリリース</h2>
-           <!-- pタグ -->
-           <p class="col-12 py-2 text-left">期間限定、コラボ情報など盛沢山！みんな見てくれよな！</p>
-           <!-- special-->
-           <div id="content" role="main" class = "row col-12 col-sm-10 col-lg-11">
+          <!-- col -->
+          <!-- タイトル col-12 -->
+          <h2 class="col-12 font-weight-bold text-left menu-title py-3">ニュースリリース</h2>
+          <!-- pタグ -->
+          <p class="col-12 py-2 text-left">期間限定、コラボ情報など盛沢山！みんな見てくれよな！</p>
+          <!-- special-->
+          <div id="content" role="main" class="row col-12 col-sm-10 col-lg-11">
 
             <div class="special-list">
               <article id="post-1" class="post post-1 row article py-2">
@@ -136,7 +115,8 @@
                 <div class="col-sm-4 col-lg-4">
 
                   <a href="special.html#memberContainer">
-                  <img width="50" height="200" src="images/teamdev.png" class = "d-flex col-12 col-sm-10 col-lg-11" alt="特集1">
+                    <img width="50" height="200" src="images/teamdev.png" class="d-flex col-12 col-sm-10 col-lg-11"
+                      alt="特集1">
                   </a>
 
                 </div>
@@ -187,72 +167,75 @@
             <!-- みなさんのSNSへ飛べるようなカードを並べます。名前、簡単な自己紹介、URL。プロフィール画像は拡大する？ -->
           </div>
 
-           <!-- SNSアイコン -->
-    <section class="my-3">
-      <!--bootstrapのcontainer-fluidを使用（すべてのブレークポイントで width: 100% となります。）-->
-      <div  id="memberContainer" class="container-fluid">
-        <!--コンテナ部のタイトル-->
-        <div class="welcom-message d-flex justify-content-center align-items-center col-12">
-          <h1 class="nothing-you-could-do">Green Cafe recursion's member</h1>
-        </div>
-      </div>
-      <!--コンテナの中にカードを追加していく（User Profile Cards）を参考にしてみます-->
-      <!-- コンテナの中にカードを追加（Bootstrap活用Ver） -->
-      <div class="container-fluid">
-        <div class="row gx-1 justify-content-center d-flex">
-          <div class="card mx-3 col-3 row h-100 d-flex">
-            <img src="images/special/gypsy.png" class="m-1 card-img-top card-picture-specialPage" alt="...">
-            <div class="card-body">
-              <h5 class="card-title justify-content-center">GypsyR</h5>
-              <p class="card-text">【趣味】<br>映画鑑賞、旅行（海外好き）<br>【一言】<br>もっとwebアプリ作る</p>
-              <a href="#" target="_blank" class="btn btn-primary justify-content-center">Follow</a>
+          <!-- SNSアイコン -->
+          <section class="my-3">
+            <!--bootstrapのcontainer-fluidを使用（すべてのブレークポイントで width: 100% となります。）-->
+            <div id="memberContainer" class="container-fluid">
+              <!--コンテナ部のタイトル-->
+              <div class="welcom-message d-flex justify-content-center align-items-center col-12">
+                <h1 class="nothing-you-could-do">Green Cafe recursion's member</h1>
+              </div>
             </div>
-          </div>
-          <div class="card mx-3 col-3 row h-100 d-flex">
-            <img src="images/special/daiten.png" class="m-1 card-img-top card-picture-specialPage" alt="...">
-            <div class="card-body">
-              <h5 class="card-title justify-content-center">daiten</h5>
-              <p class="card-text">【趣味】<br>あああああ<br>【一言】<br>あああああ</p>
-              <a href="#" target="_blank" class="btn btn-primary justify-content-center">Follow</a>
+            <!--コンテナの中にカードを追加していく（User Profile Cards）を参考にしてみます-->
+            <!-- コンテナの中にカードを追加（Bootstrap活用Ver） -->
+            <div class="container-fluid">
+              <div class="row gx-1 justify-content-center d-flex">
+                <div class="card mx-3 col-3 row h-100 d-flex">
+                  <img src="images/special/gypsy.png" class="m-1 card-img-top card-picture-specialPage" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title justify-content-center">GypsyR</h5>
+                    <p class="card-text">【趣味】<br>映画鑑賞、旅行（海外好き）<br>【一言】<br>もっとwebアプリ作る</p>
+                    <a href="#" target="_blank" class="btn btn-primary justify-content-center">Follow</a>
+                  </div>
+                </div>
+                <div class="card mx-3 col-3 row h-100 d-flex">
+                  <img src="images/special/daiten.png" class="m-1 card-img-top card-picture-specialPage" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title justify-content-center">daiten</h5>
+                    <p class="card-text">【趣味】<br>あああああ<br>【一言】<br>あああああ</p>
+                    <a href="#" target="_blank" class="btn btn-primary justify-content-center">Follow</a>
+                  </div>
+                </div>
+                <div class="card mx-3 col-3 row h-100 d-flex">
+                  <img src="images/special/miyazakiyu.jpg" class="m-1 card-img-top card-picture-specialPage" alt="...">
+                  <div class="card-body">
+                    <h5 class="card-title justify-content-center">ミヤザキユー</h5>
+                    <p class="card-text">【趣味】<br>あああああ<br>【一言】<br>あああああ</p>
+                    <a href="#" target="_blank" class="btn btn-primary justify-content-center">Follow</a>
+                  </div>
+                </div>
+              </div>
             </div>
-          </div>
-          <div class="card mx-3 col-3 row h-100 d-flex">
-            <img src="images/special/miyazakiyu.jpg" class="m-1 card-img-top card-picture-specialPage" alt="...">
-            <div class="card-body">
-              <h5 class="card-title justify-content-center">ミヤザキユー</h5>
-              <p class="card-text">【趣味】<br>あああああ<br>【一言】<br>あああああ</p>
-              <a href="#" target="_blank" class="btn btn-primary justify-content-center">Follow</a>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-    </section>
 
-     <!-- フッター -->
-     <footer class="bg-light">
-      <!-- SNSアイコン -->
-      <div>
-        <div class="icons d-flex flex-wrap col-12 justify-content-center align-items-center">
-            <a href="#"><img src="https://img.icons8.com/color/344/instagram-new--v1.png" alt=""></a>
-            <a href="#"><img src="https://img.icons8.com/color/344/twitter--v1.png" alt=""></a>
-            <a href="#"><img src="https://img.icons8.com/color/344/facebook.png" alt=""></a>
-            <a href="#"><img src="https://img.icons8.com/color/344/youtube-play.png" alt=""></a>
+          </section>
+
+          <!-- フッター -->
+          <footer class="bg-light">
+            <!-- SNSアイコン -->
+            <div>
+              <div class="icons d-flex flex-wrap col-12 justify-content-center align-items-center">
+                <a href="#"><img src="https://img.icons8.com/color/344/instagram-new--v1.png" alt=""></a>
+                <a href="#"><img src="https://img.icons8.com/color/344/twitter--v1.png" alt=""></a>
+                <a href="#"><img src="https://img.icons8.com/color/344/facebook.png" alt=""></a>
+                <a href="#"><img src="https://img.icons8.com/color/344/youtube-play.png" alt=""></a>
+              </div>
+            </div>
+            <!--コピーライト-->
+            <div class="copywright d-column justify-content-center align-items-center text-center py-3">
+              <a href="#" class="px-2">よくあるご質問</a>
+              <a href="#" class="px-2">利用規約</a>
+              <a href="contact.html" class="px-2">ご意見・お問い合わせ</a>
+              <a href="#" class="px-2">個人情報保護方針</a>
+              <p class="px-2 m-2">Copyright © 2022 Green cafe recursion</p>
+            </div>
+          </footer>
         </div>
-      </div>
-      <!--コピーライト-->
-      <div class="copywright d-column justify-content-center align-items-center text-center py-3">
-        <a href="#" class="px-2">よくあるご質問</a>
-        <a href="#" class="px-2">利用規約</a>
-        <a href="contact.html" class="px-2">ご意見・お問い合わせ</a>
-        <a href="#" class="px-2">個人情報保護方針</a>
-        <p class="px-2 m-2">Copyright © 2022 Green cafe recursion</p>
-      </div>
-    </footer>
-    </div>
-    <!--（To各人）javascriptで追加したい機能あれば、js書いてscriptsフォルダ内に保存して頂ければよいと思います-->
-    <!-- 現時点ではjavascript使用していません-->
-    <script type="text/javascript" src="scripts/main.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script>
-  </body>
+        <!--（To各人）javascriptで追加したい機能あれば、js書いてscriptsフォルダ内に保存して頂ければよいと思います-->
+        <!-- 現時点ではjavascript使用していません-->
+        <script type="text/javascript" src="scripts/main.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+          integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+          crossorigin="anonymous"></script>
+</body>
+
 </html>

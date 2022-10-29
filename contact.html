@@ -1,39 +1,24 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="description" content="Green Caffe Recursionのホームページです。" />
-    <!-- Destyle CSS -->
-    <link rel="stylesheet" href="styles/destyle.css" />
-    <!-- Bootstrap CSS -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
-      crossorigin="anonymous"
-    />
-    <!-- style CSS （index.htmlと同じcssファイルを使用しています。-->
-    <link rel="stylesheet" href="styles/style.css" />
-    <!--Google Fonts(変更可能)-->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap"
-      rel="stylesheet"
-    />
-    <title>Green Caffe Recursion Contact</title>
-  </head>
-  <body>
-    <div id="contact" class="vh-100 d-flex  flex-column">
 
-      <!-- ナブバー HPタイトルのみ -->
-      <nav class="navbar navbar-light bg-light">
-        <div class="container-fluid">
-          <a class="navbar-brand nothing-you-could-do" href="index.html">Green Caffe Recursion</a>
-        </div>
-      </nav>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Green Caffe Recursionのホームページです。" />
+  <!-- Destyle CSS -->
+  <link rel="stylesheet" href="styles/destyle.css" />
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous" />
+  <!-- style CSS （index.htmlと同じcssファイルを使用しています。-->
+  <link rel="stylesheet" href="styles/style.css" />
+  <!--Google Fonts(変更可能)-->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap" rel="stylesheet" />
+  <title>Green Caffe Recursion Contact</title>
+</head>
 
       <!-- お問い合わせフォーム -->
       <section>
@@ -77,41 +62,73 @@
               <div class="mb-5">
                  <label for="exampleFormControlTextarea1" class="form-label">本文</label>
                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="7"></textarea>
-              </div>
-              <div class="mb-5 form-check">
-                 <input type="checkbox" class="form-check-input" id="exampleCheck1">
-                 <label class="form-check-label" for="exampleCheck1">私はロボットではありません</label>
-              </div>
-              <!-- 送信ボタン -->
-              <button type="submit" class="btn btn-primary mb-5">送信</button>
-           </form>
-          </div>
-        </div>
-      </section>
 
-      <!-- フッター -->
-      <footer class="bg-light">
-        <!-- SNSアイコン -->
-        <div>
-          <div class="icons d-flex flex-wrap col-12 justify-content-center align-items-center">
-              <a href="#"><img src="https://img.icons8.com/color/344/instagram-new--v1.png" alt=""></a>
-              <a href="#"><img src="https://img.icons8.com/color/344/twitter--v1.png" alt=""></a>
-              <a href="#"><img src="https://img.icons8.com/color/344/facebook.png" alt=""></a>
-              <a href="#"><img src="https://img.icons8.com/color/344/youtube-play.png" alt=""></a>
-          </div>
+              </div>
+              <div class="col">
+                <input type="text" class="form-control" placeholder="Last name" aria-label="Last name">
+              </div>
+            </div>
+            <!-- 電話番号 -->
+            <div class="mb-5">
+              <label for="exampleInputPhone" class="form-label">電話番号</label>
+              <input type="tel" class="form-control" id="exampleInputPhone" placeholder="09012345678 (ハイフンなし)">
+            </div>
+            <!-- メール -->
+            <div class="mb-5">
+              <label for="exampleInputEmail" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="exampleInputEmail" placeholder="name@example.com">
+            </div>
+            <!-- 選択 -->
+            <div class="mb-5">
+              <label for="exampleSelect" class="form-label d-block">お問い合わせ内容</label>
+              <select class="form-select" aria-label="Default select example">
+                <option selected> - </option>
+                <option value="1">営業時間について</option>
+                <option value="2">ご予約について</option>
+                <option value="3">テイクアウトについて</option>
+                <option value="4">その他</option>
+              </select>
+            </div>
+            <!-- 本文 -->
+            <div class="mb-5">
+              <label for="exampleFormControlTextarea1" class="form-label">本文</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="7"></textarea>
+            </div>
+            <div class="mb-5 form-check">
+              <input type="checkbox" class="form-check-input" id="exampleCheck1">
+              <label class="form-check-label" for="exampleCheck1">私はロボットではありません</label>
+            </div>
+            <!-- 送信ボタン -->
+            <button type="submit" class="btn btn-primary mb-5">送信</button>
+          </form>
         </div>
-        <!--コピーライト-->
-        <div class="copywright d-column justify-content-center align-items-center text-center py-3">
-          <a href="#" class="px-2">よくあるご質問</a>
-          <a href="#" class="px-2">利用規約</a>
-          <a href="contact.html" class="px-2">ご意見・お問い合わせ</a>
-          <a href="#" class="px-2">個人情報保護方針</a>
-          <p class="px-2 m-2">Copyright © 2022 Green cafe recursion</p>
-        </div>
-      </footer>
+      </div>
+    </section>
 
-      <!--（To各人）javascriptで追加したい機能あれば、js書いてscriptsフォルダ内に保存して頂ければよいと思います-->
-      <script src="scripts/drinkMenu.js" defer></script>
-    </div>
-  </body>
+    <!-- フッター -->
+    <footer class="bg-light">
+      <!-- SNSアイコン -->
+      <div>
+        <div class="icons d-flex flex-wrap col-12 justify-content-center align-items-center">
+          <a href="#"><img src="https://img.icons8.com/color/344/instagram-new--v1.png" alt=""></a>
+          <a href="#"><img src="https://img.icons8.com/color/344/twitter--v1.png" alt=""></a>
+          <a href="#"><img src="https://img.icons8.com/color/344/facebook.png" alt=""></a>
+          <a href="#"><img src="https://img.icons8.com/color/344/youtube-play.png" alt=""></a>
+        </div>
+      </div>
+      <!--コピーライト-->
+      <div class="copywright d-column justify-content-center align-items-center text-center py-3">
+        <a href="#" class="px-2">よくあるご質問</a>
+        <a href="#" class="px-2">利用規約</a>
+        <a href="contact.html" class="px-2">ご意見・お問い合わせ</a>
+        <a href="#" class="px-2">個人情報保護方針</a>
+        <p class="px-2 m-2">Copyright © 2022 Green cafe recursion</p>
+      </div>
+    </footer>
+
+    <!--（To各人）javascriptで追加したい機能あれば、js書いてscriptsフォルダ内に保存して頂ければよいと思います-->
+    <script src="scripts/drinkMenu.js" defer></script>
+  </div>
+</body>
+
 </html>
