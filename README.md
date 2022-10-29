@@ -1,63 +1,50 @@
-# task1
-チーム開発課題用リポジトリ
+# Green Cafe Recursion 公式サイト
 
-# 10/22 To-Do
-- [x] 課題の理解を各自進める
-- [x] ウェブページのコンセプト検討
-- [x] 必要なページ検討
-- [x] 必要な機能検討
+## コンセプト
+GreenTeam運営によるカフェのwebサイト
+
+### ページ構成
+- トップページ（Navバー、スライダー）
+- フードページ
+- Drinkページ
+- Newsページ
+*** 
+# 各ページ紹介
+## トップページ
+### Navbar(daiten)
+
+
+### スライダー(GypsyR)
+javascriptで作成しました。(scripts/slider.js)<br>
+画像、及び画像上に載せる文字、文字色をクラスで管理し追加を容易にし、開発の効率化を図りました。<br> 
+以下のようにインスタンスを作成すればスライダーに追加できます。 <br>（ただし枚数が変わった場合アニメーションについてstyle.cssで調整する必要があります。） <br>bootstrapのcarouselを用いたスライダーで改善予定です（現在carouselContents.js作成中)
+
+```let sImg2 = new slideImg("slider_image2", "【特集】パンケーキセット！", "images/pancakes-5989136_1280.jpg","center", "c1","special.html#post-1");```
+
+### コンテナ(ミヤザキユー)
+メニューページ紹介の上におすすめメニューを取り上げたカードを追加してみました。
+ホバーするとcssアニメーションで動くようになっていますが、リンクを付けられていません…
+
+### フッター(ミヤザキユー)
+各SNSアイコンにホバーするとcssアニメーションで動くようになっています。
 ***
-# Cafe Recursion Home Page（参考）
-https://acha0203.github.io/Cafe-Recursion/
-要件：トップページにスライダーアニメーションを配置する。
-1. スライダーなしで作成
-2. 見本どおりに作成
-3. 見本にはないメニューのページやリンクなども作成
-*** 
-# コンセプト(仮)
-カフェ（変更可）のwebサイト
-# 要件定義(最低限？)
-- HTML、CSS、Bootstrap（javascript）使用
-- メニューバー（ページ幅縮小でToggle）
-- スライダー部分
-- What's newとRecommendation
-
-## 時間の限り追加していく機能一例
-- メニュー各種ページ作成
-- What's newとRecommendationをクリックしたときのアクション
-- 各種ページ, またオリジナル機能等（SNS連携?やユーザとのインタラクション機能など）
-
-*** 
-# 進め方（案）
-1. まずは、トップページの開発を分担 例えばメニューバー担当、スライダー部分担当、ページ下部担当⇒pull request積極的に使ってアップデート⇒merge(3日くらい？) 
-
-初回は、作業ディレクトリにて
-`git clone https://github.com/greenGitWorkShop/task1.git` 
-`git remote set-url origin https://github.com/greenGitWorkShop/task1.git`  
-`git init`
-`git switch -c {branchname}` 
-`git status` 
-`コード編集` 
-`git add .` 
-`git commit -m "xxx"`  (更新があったら積極的にcommit)
-`git push origin {branchname}` 
-
-（動作確認も終えてある程度できたら）**プルリクエスト！**reviewerにメンバー追加
-Reviewerは修正等あれば編集やcomment、問題なければapprove。code複数行選ぶときはshift押しながら。
-最後はリーダーがMerge
-
-更なる機能追加、修正時作業ディレクトリにて
-`git pull origin develop --rebase`
-`git switch -c {branchname}` 
-　　　　・
-　　　　・
-　　　　・
-
-2. 完成したら、各ページの作成を担当者ごとに作成⇒pull request⇒merge（10/29 夕方あたりまで?）
-3. **10/29 23:59**までにデプロイ
+## フードページ(daiten)
 
 ***
-## その他
+## Sweet Page(daiten)
+
+***
+## drink Page(ミヤザキユー)
+おすすめのドリンクをランダムで選んでくれるドリンクおみくじ機能を搭載しました。
+ページを更新しなければおみくじの内容が更新しない（クリックするたびに更新するわけではない）のが反省点です。
+***
+## news Page(GypsyR)
+***
+## お問い合わせフォーム(ミヤザキユー)
+Bootstrapを活用し、お問い合わせフォームを作成してみました。
+（入力してもデータは受け取れませんが…）
+***
+## その他　参考ページなど
 [マークダウン記法](https://qiita.com/kamorits/items/6f342da395ad57468ae3)
 [vscode:ブラウザでhtml開く](https://step-learn.com/article/vscode/016-open-browser.html)
 [「git pull」を実行するとリモートの内容が自動的にマージされてしまいますが、マージしたくない場合はfetchコマンド](https://qiita.com/tarr1124/items/d807887418671adbc46f)
