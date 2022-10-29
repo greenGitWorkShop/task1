@@ -69,10 +69,10 @@ class helperFunction{
 
 //インスタンス作成　名称、テキスト、画像URL、画像位置、文字色、クリック先のURL
 let sImg1 = new slideImg("slider_image1", "　", "images/linkedin_banner_image_2.png","left", "c1", "special.html#post-3");
-let sImg2 = new slideImg("slider_image2", "特割情報！", "images/pancakes-5989136_1280.jpg","right", "c3","special.html#post-1");
-let sImg3 = new slideImg("slider_image3", "立ち上げメンバー紹介", "images/special/member.png","center", "c1","special.html#post-2");
-let sImg4 = new slideImg("slider_image4", "　 【新メニュー】GreenCoffee", "images/apple-pie-5479993_1280.jpg","left", "c3","drinkMenu.html");
-let sImg5 = new slideImg("slider_image5", "【新メニュー】コーヒー豆", "images/coffee-6632524_1280.jpg","center", "c2","foodMenu.html");
+let sImg2 = new slideImg("slider_image2", "特割情報！", "images/pancakes-5989136_1280.jpg","right", "c2","special.html#post-1");
+let sImg3 = new slideImg("slider_image3", "立ち上げメンバー紹介!!!", "images/special/member.png","right", "c3","special.html#post-2");
+let sImg4 = new slideImg("slider_image4", "  　ドリンク占いしませんか？", "images/coffee-2151200_1280.jpg","left", "c1","drinkMenu.html");
+let sImg5 = new slideImg("slider_image5", "【期間限定メニュー】パエリア", "https://free-materials.com/adm/wp-content/uploads/2017/10/adpDDSC_8501-750x499.jpg","center", "c2","foodMenu.html");
 let sList = [sImg1,sImg2,sImg3,sImg4,sImg5];
 //各要素配置
 helperFunction.startupSlider(sList);
