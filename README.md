@@ -34,7 +34,7 @@ javascriptで作成しました。(scripts/slider.js)<br>
 ## Drink Page(ミヤザキユー)
 おすすめのドリンクをランダムで選んでくれるドリンクおみくじ機能を搭載しました。
 ページを更新しなければおみくじの内容が更新しない（クリックするたびに更新するわけではない）のが反省点です。<br>
-<img width="700" alt="Green Cafe Recursion" src="images/readme/divination.png">
+<img width="700" alt="Green Cafe Recursion" src="images/readme/divination.PNG">
 ***
 ## Sweet Page(daiten)
 各ページの仕様に併せて作成。画像サイズはcssで調整
